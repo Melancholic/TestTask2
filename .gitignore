@@ -1,4 +1,5 @@
 # exclude everything except directory foo/bar
-Polynoms/.idea/
-Polynoms/.idea/*
+*/.idea/*
+*/.idea/*
+*/*.iml
 *.class
