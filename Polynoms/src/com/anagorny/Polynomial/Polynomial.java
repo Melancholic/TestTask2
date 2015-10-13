@@ -76,7 +76,7 @@ public class Polynomial {
                 result.append("+");
             }
             int value = Math.abs(monomials.get(key));
-            result.append(value == 1 ? "" : value);
+            result.append((value == 1 && key!=0) ? "" : value);
             if (key != 0) {
                 result.append(variable);
                 if (key != 1) {
