@@ -60,13 +60,13 @@ public class Main {
      * @param m Второе число
      * @return Минимальное число подстановок
      */
-    private static long eval(long n, long m) {
+    public static long eval(long n, long m) {
         if (m < n) {
             throw new IllegalArgumentException("Error: The second argument can not be " +
                     "less than the first: " + n + ", " + m + "!");
         }
         long count = 0;
-        while (m / 2 >= n) {
+        while (m / 2 >= n && m>1 && m-n>2) {
             if (m - 2 == n + 2 && m / 2 != n) {
                 break; // Если 2 сложения выгоднее чем деление, перейти к сложению
             }
